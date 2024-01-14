@@ -14,7 +14,7 @@ const Navbar = () => {
 
         {/*Menu*/}
         <div>
-            <uL className="hidden md:flex">
+            <uL className="hidden md:flex absolute top-5 right-5">
                 <li>Home</li>
                 <li>About</li>
                 <li>Work</li>
