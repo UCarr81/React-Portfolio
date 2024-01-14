@@ -24,7 +24,7 @@ const Navbar = () => {
 
         
         {/*Hamburger*/}
-        <div onClick={handleClick} className='md:hidden z-10'>
+        <div onClick={handleClick} className='md:hidden z-10 absolute top-5 right-5 '>
             {!nav ? <img src={hamburgerStack} alt="logo" style={{width:'30px'}}/> : <img src={hamburgerEmpty} alt="logo" style={{width:'30px'}}/>}
         </div>
 
