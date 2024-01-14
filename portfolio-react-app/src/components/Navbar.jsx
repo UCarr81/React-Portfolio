@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../assets/Logo.png';
 import hamburgerStack from '../assets/HamburgerStack .png';
+import hamburgerEmpty from '../assets/HamburgerEmpty  .png';
 
 const Navbar = () => {
+    const [ nav, setNav ] = useState(false);
+    const handleClick = () => setNav(!nav);
     return (
-        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gray-700 text-white-300">
+        <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-gray-700 text-white">
         <div>
             <img src={logo} alt="logo" style={{width: '100px'}}/>
         </div>
@@ -21,13 +24,13 @@ const Navbar = () => {
 
         
         {/*Hamburger*/}
-        <div className='md:hidden z-10'>
-            <img src={hamburgerStack} alt= "logo" style={{width: '30px'}}/>
+        <div onClick={handleClick} className='md:hidden z-10'>
+            {!nav ? <img src={hamburgerStack} alt="logo" style={{width:'30px'}}/> : <img src={hamburgerEmpty} alt="logo" style={{width:'30px'}}/>}
         </div>
 
         {/*Mobile Menu*/}
-        <div className='hidden'>
-            <uL className='absolute top-0 left-0 w-full h-screen bg-gray-700 flex flex-col justify-center items-center'>
+        <div>
+            <uL className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-gray-700 flex flex-col justify-center items-center'}>
                 <li className='py-6 text-3xl'>Home</li>
                 <li className='py-6 text-3xl'>About</li>
                 <li className='py-6 text-3xl'>Work</li>
