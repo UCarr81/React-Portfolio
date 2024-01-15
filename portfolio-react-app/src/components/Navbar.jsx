@@ -15,7 +15,7 @@ const Navbar = () => {
 
         {/*Menu*/}
         <div>
-            <uL className="hidden md:flex absolute top-5 right-5">
+            <ul className="hidden md:flex absolute top-5 right-5">
                 <li>
                     <Link to='home' smooth={true} duration={500}>
                         Home
@@ -40,7 +40,7 @@ const Navbar = () => {
                     </Link>
                </li>
 
-            </uL>
+            </ul>
         </div>
 
         
@@ -51,7 +51,7 @@ const Navbar = () => {
 
         {/*Mobile Menu*/}
         <div>
-            <uL className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-gray-700 flex flex-col justify-center items-center'}>
+            <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-gray-700 flex flex-col justify-center items-center'}>
                 <li className='py-6 text-3xl'>
                     <Link onClick={handleClick} to='home' smooth={true} duration={500}>
                         Home
@@ -72,7 +72,7 @@ const Navbar = () => {
                         Contact
                     </Link>
                 </li>
-            </uL>
+            </ul>
         </div>
 
 
