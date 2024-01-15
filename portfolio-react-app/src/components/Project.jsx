@@ -9,22 +9,22 @@ const Project = () => {
   const projects = [
     {
       image: SkinScoreImage,
-      demoLink: '/',
+      demoLink: 'https://skin-score-481d334348c9.herokuapp.com/login',
       title: 'SkinScore',
     },
     {
       image: FilmPulse,
-      demoLink: '/',
+      demoLink: 'https://github.com/marcusperdue/FilmPulse?tab=readme-ov-file',
       title: 'FilmPulse',
     },
     {
       image: Weather,
-      demoLink: '/',
+      demoLink: 'https://ucarr81.github.io/Weather-Dashboard/',
       title: 'Weather',
     },
     {
       image: ETracker,
-      demoLink: '/',
+      demoLink: 'https://github.com/UCarr81/Employee-Tracker.git',
       title: 'Emp. Tracker',
     },
   ];
