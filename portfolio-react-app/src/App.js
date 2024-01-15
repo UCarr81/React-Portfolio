@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar";
 import Home from './components/Home';
 import About from './components/About';
-import Work from './components/Work';
+import Project from './components/Project.jsx'
 import Contact from './components/Contact';
+import Footer from './components/Footer.jsx'
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Work />
+      <Project />
       <Contact />
+      <Footer />
     </div>
   );
 }

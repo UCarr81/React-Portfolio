@@ -5,7 +5,7 @@ import Weather from '../assets/Weather.png';
 import ETracker from '../assets/EmployeeTracker.png';
 import './Work.css';
 
-const Work = () => {
+const Project = () => {
   const projects = [
     {
       image: SkinScoreImage,
@@ -54,4 +54,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Project;
