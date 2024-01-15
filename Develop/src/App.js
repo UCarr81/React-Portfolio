@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar";
 import Home from './components/Home';
 import About from './components/About';
-import Project from './components/Project.jsx'
+import Work from './components/Work.jsx'
 import Contact from './components/Contact';
 import Footer from './components/Footer.jsx'
 
@@ -11,7 +11,7 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Project />
+      <Work />
       <Contact />
       <Footer />
     </div>

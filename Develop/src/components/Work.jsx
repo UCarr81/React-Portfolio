@@ -30,7 +30,7 @@ const Project = () => {
   ];
 
   return (
-    <div className="w-full mx-auto p-8 bg-gray-800 md:-h-screen">
+    <div name='work' className="w-full h-screen mx-auto p-8 bg-gray-800 z-0">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {projects.map((project, index) => (
           <div key={index} className="mb-4 relative group overflow-hidden transition-all duration-300 hover:bg-transparent">

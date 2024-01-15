@@ -29,8 +29,8 @@ const Navbar = () => {
                 </li>
 
                 <li>
-                    <Link to='project' smooth={true} duration={500}>
-                        Projects
+                    <Link to='work' smooth={true} duration={500}>
+                        Work
                     </Link>
                 </li>
 
@@ -39,6 +39,14 @@ const Navbar = () => {
                         Contact
                     </Link>
                </li>
+
+               <li>
+               <a href='https://www.linkedin.com/in/uriel-carrillo-m-e' alt='LinkedIn'>
+                    Resume
+               </a>
+
+               </li>
+
 
             </ul>
         </div>
@@ -63,7 +71,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className='py-6 text-3xl'>
-                    <Link onClick={handleClick} to='project' smooth={true} duration={500}>
+                    <Link onClick={handleClick} to='work' smooth={true} duration={500}>
                         Work
                     </Link>
                 </li>
@@ -72,6 +80,12 @@ const Navbar = () => {
                         Contact
                     </Link>
                 </li>
+
+                <li className='py-6 text-3xl'>
+                    <a href='https://www.linkedin.com/in/uriel-carrillo-m-e' alt='LinkedIn'>
+                        Resume
+                    </a>
+               </li>
             </ul>
         </div>
 
